@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+
+    background-color: yellow;
+   
+}
+h1{
+   padding: 5rem;
+     font-size: 5rem;
+     text-align: center;
+}
+
+.Box{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus,.sub,p,.reset{
+    padding:3rem;
+    padding: 3rem 4rem;
+    background-color: red;
+    color:yellow;
+    border-radius: 4rem;
+    font-size: 5rem;
+    margin: 2rem;
+}
+.reset{
+  margin-left: 36%;
+  margin-right:50%;
+}
+
+
