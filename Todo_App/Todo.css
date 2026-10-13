@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+padding-inline: 24px;
+
+}
+section {
+    width: 100%;
+ 
+     padding: 80px 0;
+}
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+     background-color: darkslateblue;
+  overflow-x: hidden; /* side scroll band */
+}
+.todo_Content{
+  background-color: #f3f3f3;
+ 
+ width: 50%;
+ border-radius: 20px;
+ margin: 0 auto;
+ margin-top: 7rem;
+ padding: 2rem 2rem 4rem 2rem;
+}
+h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: darkslateblue;
+}
+
+.text-Content{
+    margin-top: 1.3rem;
+    /* width: 100%; */
+}
+.text-div{
+    display: flex;
+    justify-content:flex-start;
+   
+    align-items: center;
+
+    .del{
+         margin-left: auto;
+         background-color: red;
+         color: white;
+         padding: 10px;
+         margin-bottom: 5px;
+         border: none;
+    }
+}
+
+.input-div input {
+    flex: 1;
+    min-width: 0;
+    padding: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgrey;
+    box-sizing: border-box;
+}
+
+.input-div .btnstyle {
+    width: auto;
+    flex-shrink: 0;
+    background-color: orangered;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+
+}
+.my-checkbox {
+    appearance: none;
+    width: 20px;
+   margin-right: 10px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+}
+
+.my-checkbox:checked {
+    background: red;
+    border-color: red;
+}
+
+.my-checkbox:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.input-div {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-div input {
+    flex: 1;
+    min-width: 0;
+    padding: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgrey;
+    box-sizing: border-box;
+}
+
+.input-div .btnstyle {
+    width: auto;
+    flex-shrink: 0;
+    background-color: orangered;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+
+}
+
+@media (max-width: 480px) {
+    .todo_Content {
+        width: 95%;
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .input-div {
+        gap: 8px;
+    }
+
+    .input-div input {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .input-div .btnstyle {
+        width: 30%;
+        padding: 0.8rem 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .todo_Content {
+        width: 75%;
+        margin-top: 4rem;
+        padding: 1.5rem;
+    }
+
+    .input-div .btnstyle {
+        width: 28%;
+    }
+}
+
